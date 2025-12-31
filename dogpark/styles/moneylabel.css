@@ -1,0 +1,46 @@
+#money-text {
+    color: var(--background-color);
+    font-size: 3em;
+    margin-top: 0.2em;
+    -webkit-text-stroke: 0.5px var(--text-color);
+    text-shadow: 0px 4px 10px #00000053;
+}
+
+#money-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#money-container h2 {
+    position: absolute;
+    margin: 0;
+    top: 1em;
+
+    font-size: 2em;
+    color: var(--background-color);
+    -webkit-text-stroke: 0.5px var(--text-color);
+
+    animation: fallDown 0.6s ease-out forwards;
+}
+
+@keyframes fallDown {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+}
+
+#rebirth-text {
+    position: fixed;
+    top: 0;
+    left: 2vw;
+    
+    font-size: 2em;
+    color: var(--background-color);
+    -webkit-text-stroke: 0.5px var(--lilac-dark-purple);
+}

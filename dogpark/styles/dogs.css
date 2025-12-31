@@ -1,0 +1,45 @@
+#dogs, #evil-dog-container, #cupid-dog-container  {
+    position: fixed;
+    top: 0;
+    left: 2.5vw;
+    width: 95vw;
+    height: 87dvh;
+    z-index: -1;
+
+    pointer-events: none;
+}
+
+img, .dog-image {
+    position: absolute;
+    width: 8em;
+    height: 8em;
+
+    border-radius: 10%;
+    box-shadow: 0px 2px 10px 2px #00000053;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+    -webkit-user-drag: none;
+
+    transform: translate(0px, 0px);
+    transition: transform 2s ease-in-out;
+}
+
+.evil-dog, .cupid-dog {
+    cursor: pointer;
+    pointer-events: auto;
+
+    transition: transform 2s ease-in-out, filter 0.15s ease;
+}
+
+.evil-dog:hover,
+.cupid-dog:hover  {
+    filter: brightness(0.5); 
+}
+
+.evil-dog:active,
+.cupid-dog:active  {
+    filter: brightness(1); 
+}

@@ -1,0 +1,49 @@
+#button-container {
+    position: fixed;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    bottom: 6vh;
+}
+
+button {
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 50px;
+    font-size: 24px;
+  
+    white-space: nowrap;
+
+    margin: 0em 1em 0em 1em;
+
+    border-radius: 0.5em;
+    border-width: 0.01rem;
+    border-color: var(--text-color);
+    box-shadow: 0px 2px 10px 2px #00000053;
+    font-family: 'Chewy', sans-serif;
+    background-color: var(--background-color);
+    -webkit-text-stroke: 1px var(--text-color);
+    color: var(--background-color);
+    cursor: pointer;
+
+    transition: transform 0.15s ease-in-out;
+}
+
+#rebirth-button {
+    background-color: var(--lilac-purple);
+    border-radius: 0.5em;
+    border: 0.01rem var(--lilac-dark-purple) solid;
+
+    -webkit-text-stroke: 1px var(--lilac-dark-purple);
+    color: var(--background-color);
+}    
+
+button:hover {
+    transform: scale(1.15);
+}
+
+button:active {
+    transform: scale(0.95);
+}

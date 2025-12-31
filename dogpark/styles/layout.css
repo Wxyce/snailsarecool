@@ -1,0 +1,23 @@
+:root {
+    --background-color: #faf9f6;
+    --text-color: #10121c;
+    --shadow-color: #00000053;
+
+    --lilac-purple: #c8a2c8;
+    --lilac-dark-purple: #a83f6f;
+}
+
+body {
+  background-color: var(--background-color);
+  background-image: radial-gradient(circle, #999 0.05em, transparent 0.05em);
+  background-size: 1em 1em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Chewy', sans-serif;
+
+  margin: 0;
+  padding: 0;
+}

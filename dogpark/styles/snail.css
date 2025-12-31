@@ -1,0 +1,67 @@
+#snail-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 13dvh;
+    z-index: -1;
+
+    pointer-events: none;
+}
+
+#snail {
+    position: relative;
+
+    pointer-events: all;
+    cursor: pointer;
+    transition: transform 2s ease-in-out, filter 0.15s ease;
+
+    animation: walking 20s ease-in-out infinite;
+}
+
+@keyframes walking {
+    0% {
+        transform: translateX(0vw) scaleX(1);
+    }
+
+    45% {
+        transform: translateX(calc(100vw - 8em)) scaleX(1);
+    }
+
+    50% {
+        transform: translateX(calc(100vw - 8em)) scaleX(-1);
+    }
+
+    95% {
+        transform: translateX(0vw) scaleX(-1)
+    }
+
+    100% {
+        transform: translateX(0vw) scaleX(1);
+    }
+}
+
+#snail:hover {
+    filter: brightness(0.5);
+}
+
+#snail:active {
+    filter: brightness(1.15);
+}
+
+
+
+.confetti {
+  position: fixed;
+  width: 8px;
+  height: 12px;
+  pointer-events: none;
+  animation: explode 700ms ease-out forwards;
+}
+
+@keyframes explode {
+  to {
+    transform: translate(var(--x), var(--y)) rotate(720deg);
+    opacity: 0;
+  }
+}
