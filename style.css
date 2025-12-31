@@ -1,0 +1,72 @@
+:root {
+    --background-color: #faf9f6;
+    --text-color: #10121c;
+    --shadow-color: #00000053;
+
+    --lilac-purple: #c8a2c8;
+    --lilac-dark-purple: #a83f6f;
+}
+
+
+body {
+  background-color: var(--background-color);
+  background-image: radial-gradient(circle, #999 0.05em, transparent 0.05em);
+  background-size: 1em 1em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Chewy', sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+
+#shells-container a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    margin: 1em;
+}
+
+#shells-container h1 {
+    font-size: 3em;
+    color: var(--background-color);
+    -webkit-text-stroke: 0.5px var(--lilac-dark-purple);
+    text-shadow: 0px 4px 10px #00000053;
+}
+
+#shells-container img {
+    width: 10em;
+
+    margin: 1em;
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.4));
+
+    transition: transform 0.15s ease-in-out;
+}
+
+#shells-container img:hover {
+    transform: scale(1.15) rotate(20deg);
+}
+
+#title {
+    color: var(--background-color);
+    font-size: 4em;
+    margin-top: 0.2em;
+    -webkit-text-stroke: 0.5px var(--text-color);
+    text-shadow: 0px 4px 10px #00000053;
+}
+
+#shells-container {
+    position: fixed;
+    display: flex;
+    top: 20vh;
+    left: 2vw;
+    width: 50vw;
+}
