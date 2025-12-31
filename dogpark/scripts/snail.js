@@ -25,8 +25,9 @@ function popConfetti(x, y) {
 
 snail.addEventListener("click", (e) => {
   popConfetti(e.clientX, e.clientY);
-  addMoney(200000);
+  addMoney(20);
   updateMoneyText();
   yaySound.currentTime = 0;
   yaySound.play();
+
 });
